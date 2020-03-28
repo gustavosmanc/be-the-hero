@@ -10,6 +10,9 @@ import styles from "./styles";
 
 export default function Detail() {
   const navigation = useNavigation();
+
+  navigation.setOptions();
+
   const route = useRoute();
 
   const incident = route.params.incident;
@@ -42,7 +45,7 @@ export default function Detail() {
   }
 
   return (
-    <View style={styles.container}>
+    <View onSwipeLeft={navigateBack} style={styles.container}>
       <View style={styles.header}>
         <Image source={logoImg} />
 
