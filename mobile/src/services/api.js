@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://192.168.10.111:3333"
+  baseURL: "https://gsmancuzo-be-the-hero.herokuapp.com/"
 });
 
 export default api;
